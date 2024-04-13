@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var name="Abhinav";
+        document.write(name);
+        document.write("<b> : type if this variable </b>"+typeof(name)+"<br>");
+
+        var num=8791851496;
+        document.write(num);
+        document.write("<b> : type of this variable </b>"+ typeof(num)+"</br>");
+
+        var isMarried=false;
+        document.write(isMarried);
+        document.write("<b> : type of this variable </b>"+ typeof(isMarried)+"</br>");
+
+        var x="1234";
+        document.write(x);
+        document.write("<b> : type of this variable </b>"+ typeof(x)+"</br>");
+
+        //reference data types(objets,functions and arrays)
+        var student={
+            name: "Abhishek",
+            number: 9999999999,
+            course: "Web",
+            age: 21,
+            address: {
+                streetno: 12,
+                area: "Mayur Vihar",
+                District: "East Delhi",
+                Pincode: 110091
+            }
+        }
+        document.write(student.name + " is " + student.age+ "years old.");
+        console.log(student);
+
+        //functions
+        var stu_class=function()
+        {
+            alert("Hello World!"+"</br>");
+        }
+
+        //array
+        var studentName=["Abc1","Abc3","Abc2"];
+        document.write(studentName[2]);
+    </script>
+    <button onclock="stu_class()">Click on me</button>
+    <br>
+</body>
+</html>

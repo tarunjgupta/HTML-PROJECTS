@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My New Company</title>
+  <style>
+    /* Updated CSS styles */
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      color: #444;
+    }
+    
+    h1,
+    h2 {
+      color: #ff6600;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+    }
+    
+    input[type="submit"] {
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #cc5500;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .row::after {
+      content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .column {
+      width: 50%;
+      float: left;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    
+    .column label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+    }
+    
+    ul {
+      list-style-type: none;
+      background-color: #ff6600;
+      border: 2px solid #cc5500;
+      border-radius: 4px;
+      color: white;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Company logo in top left corner -->
+    <img
+      src="https://example.com/my-new-company-logo.png"
+      alt="My New Company Logo"
+      style="float: left; margin-right: 20px; height: 80px; width: 80px;"
+    />
+    <h2>Welcome to My New Company</h2>
+
+    <!-- List of links under logo -->
+    <ul>
+      <li>Home</li>
+      <li>Services</li>
+      <li>About Us</li>
+      <li>Contact Us</li>
+    </ul>
+
+    <!-- Company details -->
+    <h1>About My New Company</h1>
+    <p>
+      My New Company is a dynamic and innovative organization specializing in cutting-edge technologies and solutions. With a talented team of experts and a customer-centric approach, we strive to deliver outstanding results and exceed client expectations. We are committed to excellence, integrity, and creating a positive impact in the industry.
+    </p>
+
+    <!-- Enquiry form -->
+    <h2>Contact Us</h2>
+    <form action="submit-enquiry.php" method="post">
+      <div class="row">
+        <div class="column">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="column">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="column">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="1" required></textarea>
+        </div>
+        <div class="column">
+          <label for="category">Category:</label>
+          <select id="category" name="category" required>
+            <option value="">--Please select--</option>
+            <option value="Java">General Inquiry</option>
+            <option value="C++">Product Support</option>
+            <option value="Python">Sales</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+
+    <!-- Pictures and YouTube videos -->
+    <h2>Latest Updates</h2>
+    <div class="row">
+      <div class="column">
+        <img src="https://example.com/new-product1.jpg" alt="New Product 1" style="width: 100%;">
+      </div>
+      <div class="column">
+        <img src="https://example.com/new-product2.jpg" alt="New Product 2" style="width: 100%;">
+      </div>
+    </div>
+    <div class="row">
+      <h2>Youtube Videos</h2>
+      <div class="column">
+        <iframe width="315" height="315" src="https://www.youtube.com/embed/gv2vfn6tyys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <p style="text-align: right;">Created by [Tarunj Gupta] [2022b0131027]</p>
+  </div>
+</body>
+</html>

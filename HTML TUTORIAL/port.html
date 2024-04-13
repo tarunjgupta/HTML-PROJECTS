@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    background-color: lightgray;
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+nav {   
+    min-height: 50px;
+    background-color: rgb(207, 141, 43);
+    padding: 0 20%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav > a {
+    color: lightgray;
+}
+
+main {
+    max-width: 1148px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: auto; 
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+    "main-title main-title main-title main-title"
+    "about about about about"
+    "quote quote quote quote"
+    "job-experiences job-experiences job-experiences skills"
+    "education other-activities other-experiences other-information"
+}
+
+#main-title {
+    grid-area: main-title;
+}
+
+#profile-photo {
+    width: 20vw;
+    height: auto;
+    max-height: 300px;
+}
+
+#about {
+    grid-area: about;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.resume {
+    background-color: white;
+    padding: 40px;
+}
+
+#quote {
+    background-color: rgb(207, 141, 43);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    grid-area: quote;
+}
+
+#job-experiences {
+    background-color: rgb(236, 236, 236);
+    padding: 20px 70px 20px 20px;
+    grid-area: job-experiences;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 16.67% 16.67% 16.67% 16.67% 16.67% 16.67%;
+    grid-template-rows: auto; 
+    grid-template-areas:
+    "experiences-title experiences-title  experiences-title experiences-title experiences-title experiences-title"
+    "exp1 exp1 exp2 exp2 exp3 exp3"
+    "exp4 exp4 exp4 exp5 exp5 exp5"
+}
+
+#experiences-title {
+    grid-area: experiences-title;
+}
+
+.job-exp1 {
+    border-radius: 20px;
+    background-color: rgb(175, 244, 252);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.job-exp2 {
+    border-radius: 20px;
+    background-color: rgb(175, 244, 252);
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.job-description {
+    padding-left: 20px;
+}
+
+#exp1 {
+    grid-area: exp1;
+}
+
+#exp2 {
+    grid-area: exp2;
+}
+
+#exp3 {
+    grid-area: exp3;
+}
+
+#exp4 {
+    grid-area: exp4;
+}
+
+#exp5 {
+    grid-area: exp5;
+}
+
+#skills {
+    grid-area: skills;
+    background-color: white;
+    padding: 20px;
+}
+
+.company-logo {
+    max-width: 150px;
+    max-height: 100px;
+}
+
+#education {
+    grid-area: education;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(207, 141, 43);
+}
+
+#other-activities {
+    grid-area: other-activities;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+#other-experiences {
+    grid-area: other-experiences;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(252, 220, 175);
+}
+
+#other-information {
+    grid-area: other-information;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+footer {
+    background-color: #3e3e3e;
+    color: lightgray;
+    padding: 10px 11%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.social-icon {
+    max-width: 40px;
+    max-height: 40px;
+    padding: 5px;
+}
+    </style>
+    <title>My portfolio</title>
+</head>
+<body>
+    <nav id="nav">
+        <a href="#nav">Home</a>
+        <a href="#about">About me</a>
+        <a href="#job-experiences">Experience</a>
+        <a href="#footer">Footer</a>
+    </nav>
+    <main>
+        <div id="main-title">
+            <h1>My Portfolio</h1> 
+        </div>
+        <div id="about" class="about">
+            <img src="image.png" id="profile-photo">
+            <div class="resume">
+                <h2>Tarunj Gupta</h2>
+                <p>Greetings! I am Tarunj Gupta, an aspiring engineer currently enrolled in ABES ENGINEERING COLLEGE . Passionate about IT field, I am dedicated to merging theoretical knowledge with hands-on experiences. Explore my portfolio to witness the intersection of my academic endeavors, practical projects, and a fervent enthusiasm for engineering challenges.
+                </p>
+            </div>
+        </div>
+        <div id="quote">
+            <h2>"Whether you think you can or you think you can't, you're right."</h2>
+            <p> —Tapan Bhardwaj</p>
+        </div>
+        <div id="job-experiences">
+            <div id="experiences-title">
+                <h2>Job-experiences</h2>
+            </div>
+            <div class="job-exp1" id="exp1">
+                
+                <div class="job-description">
+                    <h3>First</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            <div class="job-exp1" id="exp2">
+            
+                <div class="job-description">
+                    <h3>Second</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            <div class="job-exp1" id="exp3">
+                
+                <div class="job-description">
+                    <h3>Third</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+            <div class="job-exp2" id="exp4">
+                
+                <div class="job-description">
+                    <h3>Fourth</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+        
+        </div>
+        <div id="skills">
+            <h3>Programming</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Angular</li>
+                <li>Vue</li>
+                <li>NodeJS</li>
+            </ul>
+            <h3>Software</h3>
+            <ul>
+              
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>VS Code</li>
+            </ul>
+            <h3>Languages</h3>
+            <ul>
+                <li>Hindi</li>
+                <li>English</li>
+                <li>French</li>
+               
+            </ul>
+        </div>
+        <div id="education">
+            <h2>Educartion</h2>
+            <div class="higher-education">
+                <h3>ABES Engineering college</h3>
+                <p>Passing Year- 2026</p>
+            </div>
+            
+        </div>
+     
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="social-media">
+    
+            <img src="gmail.png" class="social-icon"/>
+            <img src="insta.jpg" class="social-icon"/>
+            <img src="linkedin.png" class="social-icon"/>
+        </div>
+        <div>
+            <p>Email: tarunjgupta01136@gmail.com</p>
+            <p>Telefone: 9876543210</p>
+        </div>
+        <div class="copyrights">
+            <p>Raf 2024 @ </p>
+        </div>
+    </footer>
+</body>
+</html>
